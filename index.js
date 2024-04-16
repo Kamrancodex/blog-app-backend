@@ -12,7 +12,7 @@ const { notFound, errorHandler } = require("./middlewares/errorMiddleware");
 connect(process.env.MONGO_URL);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cors({ credentials: true, origin: "blog-app-beta-amber-36.vercel.app" }));
+app.use(cors({ credentials: true, origin: "https://blog-app-beta-amber-36.vercel.app" }));
 app.use(upload());
 app.use("/uploads", express.static(__dirname + "/uploads"));
 
